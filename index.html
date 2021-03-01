@@ -1,0 +1,576 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Mailfit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<style>
+        p{
+            padding: 0;
+            margin: 0;
+        }
+		body {
+			width: 100% !important;
+			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+			margin: 0;
+			padding: 0;
+			line-height: 100%;
+		}
+		img {
+			outline: none;
+			text-decoration: none;
+			border:none;
+			-ms-interpolation-mode: bicubic;
+			max-width: 100%!important;
+			margin: 0;
+			padding: 0;
+            display: block;
+		}
+		table td {
+			border-collapse: collapse;
+		}
+		table {
+			border-collapse: collapse;
+			mso-table-lspace: 0pt;
+			mso-table-rspace: 0pt;
+        }
+        .main {
+          filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.15));  
+        }
+        .banner-bg {
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            height: 725px;
+            display: block;
+        }
+        .banner-content__logo {
+            padding-bottom: 41px;
+            padding-top: 17px;
+        }
+        .logo{
+            display: inline-block;
+            cursor: pointer; 
+        }
+        .banner-content__title {
+            padding-bottom: 30px;
+        }
+        .banner-content__title h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 42px;
+            line-height: 40px;
+            text-transform: uppercase;
+            color: #000000;
+        }
+        .banner-content__items {
+            padding-bottom: 30px;
+        }
+        .item-content__discount {
+            display: block;
+            font-size: 40px;
+            line-height: 47px;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: #2e2e2e;
+        }
+        .item-content__time {
+            display: inline-block;
+            font-size: 14px;
+            line-height: 16px;
+            color: #2e2e2e;
+        }
+        .banner-content__promocode {  
+            padding-bottom: 30px;
+        }
+        .banner-content__promocode p {
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 8px;
+            color: #2e2e2e;
+        }
+        .banner-content__promocode h2 {
+            margin: 0;
+            padding: 11px 20px 7px 20px;
+            display: inline-block;
+            font-size: 28px;
+            line-height: 32px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #2e2e2e;
+            border: 1px dashed #000000;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            cursor: pointer;
+            background: #2abe80;
+            border-radius: 50px;
+            font-size: 20px;
+            line-height: 23px;
+            color: #ffffff !important;
+            padding-left: 46px;
+            padding-top: 19px;
+            padding-bottom: 19px;
+            padding-right: 46px;
+        }
+        .description{
+            padding-top: 54px;
+            padding-bottom: 80px;
+        }
+        .description-box__text {
+            font-size: 18px;
+            line-height: 28px;
+            color: #000000;
+        }
+        .description-box__text a{
+            color: #476fc6;
+        }
+        
+        .catalog-item  {   
+            vertical-align: top; 
+        }
+        .catalog-item__img  {
+            display: block;
+            width: 150px;
+            height: 113px;
+            cursor: pointer;
+        }
+        .catalog-item__link {
+            padding-top: 20px;
+            display: block;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: bold;
+            text-decoration-line: underline;
+            color: #476fc6;
+            cursor: pointer;
+        }
+        .catalog-btn {
+            padding-top: 16px;
+            padding-bottom: 68px;
+        }
+        .catalog-desc  {
+            padding-bottom: 40px;
+        }
+        .catalog-desc__text  {
+            font-size: 14px;
+            line-height: 20px;
+            color: #c4c4c4;
+        }
+        .footer-contact{
+            padding-bottom: 29px;
+        }
+        .footer-social__link {
+            display: block;
+            max-width: 24px;
+            max-height: 24px;
+        }
+        .footer-contact__phone a{
+            text-decoration: none;
+            font-size: 17px;
+            line-height: 27px;
+            color: #2abe80;
+            cursor: pointer;
+        }
+        .footer-text {
+            padding-bottom: 25px;
+        }
+        .footer-text p {            
+            font-size: 14px;
+            line-height: 16px;
+            color: #a3a3a3;
+            text-align: left;
+        }
+        .footer-text a {    
+            text-decoration: none;        
+            font-size: 14px;
+            line-height: 16px;
+            color: #a3a3a3 !important;
+            cursor: pointer;
+        }
+        .footer-actions__img {
+            padding-right: 5px;
+        }
+        .footer-actions__link a {
+            display: inline-block;
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 16px;
+            color: #a3a3a3;
+            cursor: pointer;
+        }
+	</style>
+</head>
+
+<body style="margin: 0; padding: 0;">
+	<table cellpadding="0" cellspacing="0" width="100%" bgcolor="#e5e5e5">
+        <tr>
+            <td>
+                <table class="main" cellpadding="0" cellspacing="0" width="600" align="center">
+                    <tr>
+                        <td height="42" width="600"></td>
+                    </tr>
+                    <tr>
+                        <td class="banner" bgcolor="#ffffff">
+                            <table class="banner-bg" cellpadding="0" cellspacing="0" width="600" align="center" background="https://fomyx.ru/mailfit-img/compressed/banner@2x.jpg">
+                                <tr>
+                                    <td class="banner-content">
+                                        <table cellpadding="0" cellspacing="0" width="600">
+                                             <tr>
+                                                 <td class="banner-content__logo">
+                                                     <table cellpadding="0" cellspacing="0" width="210" align="center">
+                                                         <tr>
+                                                             <td align="center" style="padding-right: 36px;">
+                                                                <a class="logo" href="#" style="width:78px; height:40px;">
+                                                                    <! - [if gte mso 9]>
+                                                                    <img src="https://fomyx.ru/mailfit-img/compressed/logo-1@2x.png" width="78"  style = "display: block;"  " alt="Logo" />
+                                                                    <div style = "width: 0px; height: 0px; max-height: 0; max-width: 0; overflow: hidden; display: none; visibility: hidden; mso-hide: all;">
+                                                                    <! [ endif] ->
+                                                                    <img src="https://fomyx.ru/mailfit-img/compressed/logo-1@2x.png"  width="100%"  style = "display: block;" alt="Logo" />
+                                                                    <! - [if gte mso 9]>
+                                                                    </div>
+                                                                    <! [endif] ->
+                                                                </a>
+                                                            </td>
+                                                            <td align="center">
+                                                                <a class="logo" href="#" style="width:92px; height:18px;">
+                                                                    <! - [if gte mso 9]>
+                                                                    <img src="https://fomyx.ru/mailfit-img/compressed/logo-2@2x.png" width="92"  style = "display: block;"  " alt="Logo" />
+                                                                    <div style = "width: 0px; height: 0px; max-height: 0; max-width: 0; overflow: hidden; display: none; visibility: hidden; mso-hide: all;">
+                                                                    <! [ endif] ->
+                                                                    <img src="https://fomyx.ru/mailfit-img/compressed/logo-2@2x.png"  width="100%"  style = "display: block;" alt="Logo" />
+                                                                    <! - [if gte mso 9]>
+                                                                    </div>
+                                                                    <! [endif] ->
+                                                                </a>
+                                                            </td>
+                                                         </tr>
+                                                     </table>
+                                                 </td>                 
+                                             </tr>
+                                             <tr>
+                                                 <td class="banner-content__title" align="center">
+                                                    <h1 style="font-family: Arial, Helvetica, sans-serif;">Финальная<br />распродажа<br />этого лета!</h1>
+                                                 </td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="banner-content__items">                       
+                                                    <table cellpadding="0" cellspacing="0" width="350" align="center">
+                                                        <tr>
+                                                            <td class="banner-content__item item-content" align="center">
+                                                                <! - [if gte mso 9]>
+                                                                <img src="https://fomyx.ru/mailfit-img/compressed/watermelon-1@2x.png" width="118" height="60" style = "display: block;"  " alt="watermelon" />
+                                                                <div style = "width: 0px; height: 0px; max-height: 0; max-width: 0; overflow: hidden; display: none; visibility: hidden; mso-hide: all;">
+                                                                    <! [ endif] ->
+                                                                    <img src="https://fomyx.ru/mailfit-img/compressed/watermelon-1@2x.png"  width="100%"  style = "display: block;" alt="watermelon" />
+                                                                    <! - [if gte mso 9]>
+                                                                </div>
+                                                                <! [endif] ->
+                                                                <p class="item-content__discount" style="font-family: Arial, Helvetica, sans-serif;">10%</p>
+                                                                <p class="item-content__time" style="font-family: Arial, Helvetica, sans-serif;">до 19:00</p>
+                                                            </td>
+                                                            <td class="banner-content__item item-content" align="center">
+                                                                <! - [if gte mso 9]>
+                                                                <img src="https://fomyx.ru/mailfit-img/compressed/watermelon-2@2x.png" width="107" height="60" style = "display: block;"  " alt="watermelon" />
+                                                                <div style = "width: 0px; height: 0px; max-height: 0; max-width: 0; overflow: hidden; display: none; visibility: hidden; mso-hide: all;">
+                                                                    <! [ endif] ->
+                                                                    <img src="https://fomyx.ru/mailfit-img/compressed/watermelon-2@2x.png"  width="100%"  style = "display: block;" alt="watermelon" />
+                                                                    <! - [if gte mso 9]>
+                                                                </div>
+                                                                <! [endif] ->
+                                                                <p class="item-content__discount" style="font-family: Arial, Helvetica, sans-serif;">8%</p>
+                                                                <p class="item-content__time" style="font-family: Arial, Helvetica, sans-serif;">до 22:00</p>
+                                                            </td>
+                                                            <td class="banner-content__item item-content" align="center">
+                                                                <! - [if gte mso 9]>
+                                                                <img src="https://fomyx.ru/mailfit-img/compressed/watermelon-3@2x.png" width="70" height="60" style = "display: block;"  " alt="watermelon" />
+                                                                <div style = "width: 0px; height: 0px; max-height: 0; max-width: 0; overflow: hidden; display: none; visibility: hidden; mso-hide: all;">
+                                                                    <! [ endif] ->
+                                                                    <img src="https://fomyx.ru/mailfit-img/compressed/watermelon-3@2x.png"  width="100%"  style = "display: block;" alt="watermelon" />
+                                                                    <! - [if gte mso 9]>
+                                                                </div>
+                                                                <! [endif] ->
+                                                                <p class="item-content__discount" style="font-family: Arial, Helvetica, sans-serif;">5%</p>
+                                                                <p class="item-content__time" style="font-family: Arial, Helvetica, sans-serif;">до 00:00</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                 </td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="banner-content__promocode">
+                                                    <table cellpadding="0" cellspacing="0" width="260" align="center">
+                                                        <tr>
+                                                            <td align="center">
+                                                                <p style="font-family: Arial, Helvetica, sans-serif;">Промокод</p>
+                                                                <h2 style="font-family: Arial, Helvetica, sans-serif;">GOODBYELETO</h2>
+                                                            </td>
+                                                        </tr>      
+                                                    </table>
+                                                 </td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="banner-content__btn" align="center">
+                                                    <a class="btn" href="#" style="font-family: Arial, Helvetica, sans-serif;">Получить скидку</a>
+                                                 </td>
+                                             </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="description" bgcolor="#ffffff">
+                            <table cellpadding="0" cellspacing="0" width="500" align="center">
+                                <tr>
+                                    <td class="description-box" align="left">
+                                        <p class="description-box__text" style="font-family: Arial, Helvetica, sans-serif; margin-bottom: 40px;">Здравствуйте!</p>
+                                        <p class="description-box__text" style="font-family: Arial, Helvetica, sans-serif; margin-bottom: 40px;">Теперь, когда вы готовы к школе и обновили спальни своих малышей, пришла пора подумать о себе. Возможно, настало время поменять подушку или вы давно собирались купить <a href="#">шерстяное одеяло</a> на тот период, когда по ночам уже холодает, а отопление ещё не включили. </p>
+                                        <p class="description-box__text" style="font-family: Arial, Helvetica, sans-serif;">В конце концов, порадуйте себя новым комплектом <a href="#"> мягкого постельного белья</a> или красивым <a href="#"> уютным пледом</a> уютным пледом! Но торопитесь, <b>скидка 10%</b> на все эти радости будет действовать только<b>до 13:00.</b> </p> 
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="catalog" bgcolor="#ffffff">
+                            <table cellpadding="0" cellspacing="0" width="500" align="center">
+                                <tr>
+                                    <td class="catalog-item" align="center" style="padding-bottom: 21px;">
+                                        <a class="catalog-item__img" href="#">
+                                            <! - [if gte mso 9]>
+                                            <img src="https://fomyx.ru/mailfit-img/item-1@2x.jpg" width="150" height="113" style = "display: block;"  " alt="cushions" />
+                                            <div style = "width: 0px; height: 0px; max-height: 0; max-width: 0; overflow: hidden; display: none; visibility: hidden; mso-hide: all;">
+                                                <! [ endif] ->
+                                                <img src="https://fomyx.ru/mailfit-img/item-1@2x.jpg"  width="100%"  style = "display: block;" alt="cushions" />
+                                                <! - [if gte mso 9]>
+                                            </div>
+                                            <! [endif] ->
+                                        </a>
+                                        <a class="catalog-item__link" style="font-family: Arial, Helvetica, sans-serif;" href="#">Подушки</a>
+                                    </td>
+                                    <td class="catalog-item" align="center" style="padding-bottom: 21px;">
+                                        <a class="catalog-item__img" href="#">
+                                            <! - [if gte mso 9]>
+                                            <img src="https://fomyx.ru/mailfit-img/item-2@2x.jpg" width="150" height="113" style = "display: block;"  " alt="blankets" />
+                                            <div style = "width: 0px; height: 0px; max-height: 0; max-width: 0; overflow: hidden; display: none; visibility: hidden; mso-hide: all;">
+                                                <! [ endif] ->
+                                                <img src="https://fomyx.ru/mailfit-img/item-2@2x.jpg"  width="100%"  style = "display: block;" alt="blankets" />
+                                                <! - [if gte mso 9]>
+                                            </div>
+                                            <! [endif] ->
+                                        </a>
+                                        <a class="catalog-item__link" style="font-family: Arial, Helvetica, sans-serif;" href="#">Одеяла</a>
+                                    </td>
+                                    <td class="catalog-item" align="center" style="padding-bottom: 21px;">
+                                        <a class="catalog-item__img" href="#">
+                                            <! - [if gte mso 9]>
+                                            <img src="https://fomyx.ru/mailfit-img/item-3@2x.jpg" width="150" height="113" style = "display: block;"  " alt="linens" />
+                                            <div style = "width: 0px; height: 0px; max-height: 0; max-width: 0; overflow: hidden; display: none; visibility: hidden; mso-hide: all;">
+                                                <! [ endif] ->
+                                                <img src="https://fomyx.ru/mailfit-img/item-3@2x.jpg"  width="100%"  style = "display: block;" alt="linens" />
+                                                <! - [if gte mso 9]>
+                                            </div>
+                                            <! [endif] ->
+                                        </a>
+                                        <a class="catalog-item__link" style="font-family: Arial, Helvetica, sans-serif;" href="#">Постельное бельё</a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table cellpadding="0" cellspacing="0" width="500" align="center">
+                                <tr>
+                                    <td class="catalog-item" align="center">
+                                        <a class="catalog-item__img" href="#">
+                                            <! - [if gte mso 9]>
+                                            <img src="https://fomyx.ru/mailfit-img/item-4@2x.jpg" width="150" height="113" style = "display: block;"  " alt="bedspreads" />
+                                            <div style = "width: 0px; height: 0px; max-height: 0; max-width: 0; overflow: hidden; display: none; visibility: hidden; mso-hide: all;">
+                                                <! [ endif] ->
+                                                <img src="https://fomyx.ru/mailfit-img/item-4@2x.jpg"  width="100%"  style = "display: block;" alt="bedspreads" />
+                                                <! - [if gte mso 9]>
+                                            </div>
+                                            <! [endif] ->
+                                        </a>
+                                        <a class="catalog-item__link" style="font-family: Arial, Helvetica, sans-serif;" href="#">Пледы и <br /> покрывала</a>
+                                    </td>
+                                    <td class="catalog-item" align="center">
+                                        <a class="catalog-item__img" href="#">
+                                            <! - [if gte mso 9]>
+                                            <img src="https://fomyx.ru/mailfit-img/item-5@2x.jpg" width="150" height="113" style = "display: block;"  " alt="bathroom" />
+                                            <div style = "width: 0px; height: 0px; max-height: 0; max-width: 0; overflow: hidden; display: none; visibility: hidden; mso-hide: all;">
+                                            <! [ endif] ->
+                                            <img src="https://fomyx.ru/mailfit-img/item-5@2x.jpg"  width="100%"  style = "display: block;" alt="bathroom" />
+                                            <! - [if gte mso 9]>
+                                            </div>
+                                            <! [endif] ->
+                                        </a>
+                                        <a class="catalog-item__link" style="font-family: Arial, Helvetica, sans-serif;" href="#">Ванная</a>
+                                    </td>
+                                    <td class="catalog-item" align="center">
+                                        <a class="catalog-item__img" href="#">
+                                            <! - [if gte mso 9]>
+                                            <img src="https://fomyx.ru/mailfit-img/item-6@2x.jpg" width="150" height="113" style = "display: block;"  " alt="kitchen" />
+                                            <div style = "width: 0px; height: 0px; max-height: 0; max-width: 0; overflow: hidden; display: none; visibility: hidden; mso-hide: all;">
+                                            <! [ endif] ->
+                                            <img src="https://fomyx.ru/mailfit-img/item-6@2x.jpg"  width="100%"  style = "display: block;" alt="kitchen" />
+                                            <! - [if gte mso 9]>
+                                            </div>
+                                            <! [endif] ->
+                                        </a>
+                                        <a class="catalog-item__link" style="font-family: Arial, Helvetica, sans-serif;" href="#">Кухня бельё</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="catalog-btn "  bgcolor="#ffffff" align="center">
+                            <p><a class="btn" style="font-family: Arial, Helvetica, sans-serif;" href="#">В магазин</a></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="catalog-desc"  bgcolor="#ffffff" >
+                            <table cellpadding="0" cellspacing="0" width="500" align="center">
+                                <tr>
+                                    <td class="catalog-desc__text" align="center">
+                                        <p style="font-family: Arial, Helvetica, sans-serif;">Промокод действует на все товары, кроме разделов «Кровати» и «Матрасы». Cкидка не суммируется со скидками на сайте, скидками и подарками по другим промокодам и дисконтным картам. Размер скидки зависит от времени оформления заказа.</p> 
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="34" width="600"></td>
+                    </tr>
+                    <tr>
+                        <td class="footer" >
+                            <table cellpadding="0" cellspacing="0" width="542" align="center">
+                                <tr>
+                                    <td class="footer-contact">
+                                        <table cellpadding="0" cellspacing="0" width="500" align="center">
+                                            <tr>
+                                                <td class="footer-contact__social" align="left">
+                                                    <table cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td style="padding-right:20px;">
+                                                                <a class="footer-social__link" href="#">
+                                                                    <! - [if gte mso 9]>
+                                                                    <img src="https://fomyx.ru/mailfit-img/vk@2x.png" width="24"  style = "display: block;"  " alt="Vk" />
+                                                                    <div style = "width: 0px; height: 0px; max-height: 0; max-width: 0; overflow: hidden; display: none; visibility: hidden; mso-hide: all;">
+                                                                        <! [ endif] ->
+                                                                        <img src="https://fomyx.ru/mailfit-img/vk@2x.png"  width="100%"  style = "display: block;" alt="Vk" />
+                                                                        <! - [if gte mso 9]>
+                                                                    </div>
+                                                                    <! [endif] ->
+                                                                </a>
+                                                            </td>
+                                                            <td style="padding-right:20px;">
+                                                                <a class="footer-social__link" href="#">
+                                                                    <img src="https://fomyx.ru/mailfit-img/facebook.png" alt="facebook" />
+                                                                </a>
+                                                            </td>
+                                                            <td style="padding-right:20px;">
+                                                                <a class="footer-social__link" href="#">
+                                                                    <! - [if gte mso 9]>
+                                                                    <img src="https://fomyx.ru/mailfit-img/twitter@2x.png" width="24"  style = "display: block;"  " alt="twitter" />
+                                                                    <div style = "width: 0px; height: 0px; max-height: 0; max-width: 0; overflow: hidden; display: none; visibility: hidden; mso-hide: all;">
+                                                                        <! [ endif] ->
+                                                                        <img src="https://fomyx.ru/mailfit-img/twitter@2x.png"  width="100%"  style = "display: block;" alt="twitter" />
+                                                                        <! - [if gte mso 9]>
+                                                                    </div>
+                                                                    <! [endif] ->
+                                                                </a>
+                                                            </td>
+                                                            <td style="padding-right:20px;">
+                                                                <a class="footer-social__link" href="#">
+                                                                    <! - [if gte mso 9]>
+                                                                    <img src="https://fomyx.ru/mailfit-img/instagram@2x.png" width="24"  style = "display: block;"  " alt="instagram" />
+                                                                    <div style = "width: 0px; height: 0px; max-height: 0; max-width: 0; overflow: hidden; display: none; visibility: hidden; mso-hide: all;">
+                                                                        <! [ endif] ->
+                                                                        <img src="https://fomyx.ru/mailfit-img/instagram@2x.png"  width="100%"  style = "display: block;" alt="instagram" />
+                                                                        <! - [if gte mso 9]>
+                                                                    </div>
+                                                                    <! [endif] ->
+                                                                </a>
+                                                            </td>
+                                                            <td style="padding-right:20px;">
+                                                                <a class="footer-social__link" href="#">
+                                                                    <! - [if gte mso 9]>
+                                                                    <img src="https://fomyx.ru/mailfit-img/youtube@2x.png" width="24"  style = "display: block;"  " alt="youtube" />
+                                                                    <div style = "width: 0px; height: 0px; max-height: 0; max-width: 0; overflow: hidden; display: none; visibility: hidden; mso-hide: all;">
+                                                                        <! [ endif] ->
+                                                                        <img src="https://fomyx.ru/mailfit-img/youtube@2x.png"  width="100%"  style = "display: block;" alt="youtube" />
+                                                                        <! - [if gte mso 9]>
+                                                                    </div>
+                                                                    <! [endif] ->
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a class="footer-social__link" href="#">
+                                                                    <img src="https://fomyx.ru/mailfit-img/odnoklassniki.png"   alt="odnoklassniki" />
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td class="footer-contact__phone" align="right">
+                                                    <a href="tel:+88005556055" style="font-family: Arial, Helvetica, sans-serif;">8 800 555 60 55</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="footer-text" align="center">
+                                        <p style="font-family: Arial, Helvetica, sans-serif;">Данное письмо было отправлено на <a href="mailto:hafizova.i@gmail.com">hafizova.i@gmail.com</a>. Пожалуйста, добавьте <a href="mailto:mailer@spim.ru">mailer@spim.ru</a> в вашу адресную книгу, чтобы наши письма не попадали в спам.</p>
+                                    </td>
+                                </tr>
+                                <tr> 
+                                    <td class="footer-actions" align="center">
+                                        <table>
+                                                <tr>            
+                                                    <td class="footer-actions__img">
+                                                        <! - [if gte mso 9]>
+                                                        <img src="https://fomyx.ru/mailfit-img/unsubscribe@2x.png" width="14" height="14" style = "display: block;"  " alt="unsubscribe" />
+                                                        <div style = "width: 0px; height: 0px; max-height: 0; max-width: 0; overflow: hidden; display: none; visibility: hidden; mso-hide: all;">
+                                                            <! [ endif] ->
+                                                            <img src="https://fomyx.ru/mailfit-img/unsubscribe@2x.png"  width="100%"  style = "display: block;" alt="unsubscribe" />
+                                                            <! - [if gte mso 9]>
+                                                        </div>
+                                                        <! [endif] ->
+                                                    </td>
+                                                    <td class="footer-actions__link" style="padding-right:52px;"><a href="#" style="font-family: Arial, Helvetica, sans-serif;">Отписаться</a></td>
+                                                    <td class="footer-actions__img">
+                                                        <! - [if gte mso 9]>
+                                                        <img src="https://fomyx.ru/mailfit-img/websiet@2x.png" width="14" height="14" style = "display: block;"  " alt="websiet" />
+                                                        <div style = "width: 0px; height: 0px; max-height: 0; max-width: 0; overflow: hidden; display: none; visibility: hidden; mso-hide: all;">
+                                                            <! [ endif] ->
+                                                            <img src="https://fomyx.ru/mailfit-img/websiet@2x.png"  width="100%"  style = "display: block;" alt="websiet" />
+                                                            <! - [if gte mso 9]>
+                                                        </div>
+                                                        <! [endif] ->
+                                                    </td>
+                                                    <td class="footer-actions__link"><a href="#" style="font-family: Arial, Helvetica, sans-serif;">Веб-версия</a></td>
+                                                </tr>
+                                        </table>
+                                    </td>
+                                </tr> 
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="23" width="600"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+	</table>
+</body>
+
+</html>
